@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS</title>
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/css/hirePage.css">
+    
+</head>
+<body>
+    <div class="directory">
+        <div class="logo-directory">
+            <a href=""><img class="logo-top" src="./assets/logo.svg"></a>
+            <p>Home/Hire</p>
+        </div>
+        <a href="#" class="settings"><span class="material-symbols-outlined">power_settings_new</span></a>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-no-settings">
+            <a href="/studentHomePage" class="icon-link "><img class="home icon" src="/assets/home.png"></a>
+            <a href="/searchpage" class="icon-link"><img class="search-icon icon"  src="/assets/search.png"></a>
+            <a href="/hirePage" class="icon-link open"><img class="search-icon icon" src="/assets/job-icon.png"></a>
+            <a href="/notificationPage" class="icon-link"><img class="notifications icon"  src="/assets/bell.png"></a>
+            <a href="/collabPage" class="icon-link"><img class="users icon"  src="/assets/users.png"></a>
+            <a href="/messagePage" class="icon-link"><img class="messages icon"  src="/assets/send.png"></a>
+            <a href="/profilePage" class="icon-link "><img class="profile icon"  src="/assets/profile.png"></a> 
+        </div>        
+    </div>
+    <div class="dropdown">
+      <div class="list">
+        <div class="item"><button class="deleteacc">Delete Account</button></div>
+        <div class="item"><button class="logoutbutton">Log Out</button></div>
+      </div>
+    </div>
+    <div class="popup-container" id="popup-container">
+      <div class="popup" id="popup">
+          <h2>LogOut</h2>
+          <p>Are you sure you want to log out?</p>
+          <div class="logout-options">
+            <form action="/logout" method="post"> <button id="logout">Yes</button> </form>
+            <button id="close-popup">No</button>
+        </div>
+      </div>
+  </div>
+  <div class="delete-popup-container" id="delete-popup-container">
+    <div class="delete-popup" id="delete-popup">
+        <h2>Delete</h2>
+        <p>Are you sure you want to Delete your account?</p>
+        <div class="delete-options">
+            <form action="/deletetheuser" method="post"> <button id="delete">Yes</button> </form>
+            <button id="close-delete-popup">No</button>
+        </div>
+    </div>
+</div>
+    <div class="main-container">
+      <div class="wrapper">
+          <div id="search-container">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search category name here.."
+            />
+            <button id="search"><i class="fa-solid fa-magnifying-glass" style="color: #002e7a;"></i></button>
+          </div>
+          <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">
+              All
+            </button>
+            <button class="button-value" onclick="filterProduct('Graphic-Design')">
+              Graphic-Design
+            </button>
+            <button class="button-value" onclick="filterProduct('Architecture')">
+              Architecture
+            </button>
+            <button class="button-value" onclick="filterProduct('Data-Science')">
+              Data-Science
+            </button>
+            <button class="button-value" onclick="filterProduct('Business')">
+              Business
+            </button>
+          </div>
+          <div id="profile-cards">
+             
+          </div>
+        </div>
+        <div class="saved-hired-wrapper">
+          <div class="saved-cards-container">
+            <!-- <h2>Saved Cards</h2> -->
+            <!-- <div id="saved-cards"></div> -->
+          </div>
+          <div class="hired-cards-container">
+            <!-- <h2>Hired Cards</h2> -->
+            <!-- <div id="hired-cards"></div> -->
+          </div>
+        </div>
+
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class = "student-details">
+
+      </div>
+      <div class="modal-buttons">
+        <button id="saveBtn"><i class="fa fa-bookmark"></i> Save Profile</button>
+        <button id="hireBtn">Hire Profile</button>
+      </div>
+    </div>
+  </div>
+    <script src="./js/hirePage.js"></script>
+    <script src="https://kit.fontawesome.com/6953004357.js" crossorigin="anonymous"></script>
+</body>
+</html>

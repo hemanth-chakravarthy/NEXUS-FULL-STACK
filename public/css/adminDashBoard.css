@@ -1,0 +1,85 @@
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 50px;
+    background-image: url(/assets/hello.avif);
+    background-size: cover;
+    /* margin-bottom: 10%; */
+  }
+  header {
+    background-color:#000022;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* .thead{
+    background-color: rgb(9, 20, 92);
+  } */
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.heading{
+  color: rgb(14, 36, 93);
+  text-align: center;
+}
+.sub-heading{
+  padding-left: 20px;
+}
+/* .icons{
+  margin-top: 20px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+} */
+._icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.openIcon{
+  border-bottom: 2px solid rgb(121, 190, 234) !important;
+}
+.hide{
+  display: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #0b0a41;
+    color: antiquewhite;
+  }
+  tr:hover {
+    background-color: #cdd9e7;
+  }
+
+#proj-management , #user-management , #settings ,#delete-post , #delete-user , #logout,#updateRole{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #121f58;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout{
+  padding-left: 725px;
+}
+
+
+
