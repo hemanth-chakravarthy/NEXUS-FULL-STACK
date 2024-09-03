@@ -11,13 +11,13 @@ To get started with the project, you'll need to install the necessary dependenci
 
 "https://github.com/hemanth-chakravarthy/NEXUS-FULL-STACK.git"
 
-3. Navigate to the project directory
+2. Navigate to the project directory
 
-4. Install the required dependencies using npm:
+3. Install the required dependencies using npm:
    
    "npm install / npm i"
 
-6. After installing the dependencies, you can run the project using the following command:
+4. After installing the dependencies, you can run the project using the following command:
 
    "npm run src/index.js"
 
